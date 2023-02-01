@@ -12,7 +12,7 @@ echo "Hellow world ! My name is \"David\"";
 ?>
 <h3>3.3 Write the PHP code in to display the current date.</h3>
 <?php echo date("d.m.Y") ?>
-<h3>3.4 PHP is interesting”. </h3>
+<h3>3.4 PHP is interesting. </h3>
 <?php
 $title1 = "PHP is interesting";
 echo "<h1>" . $title1 . "</h1>";
@@ -38,5 +38,7 @@ echo "
 ";
 
 ?>
+<h3>4 Screenshot of the development environment</h3>
+<img src="image1.jpg" alt="Docker img">
 <?php include "footer.php" ?>
 

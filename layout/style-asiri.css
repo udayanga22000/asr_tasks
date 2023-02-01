@@ -1,0 +1,160 @@
+body {
+    background-color:#EF92D5;
+    font-family:'Courier New', Courier, monospace;
+    color:#680a11;
+    font-size: 13.5px;
+    width: 1080px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    margin-right: 50px;
+    margin-left:5px;
+    margin-bottom: 0px;
+}
+div{
+    padding-top: 0px;
+}
+nav li {
+    font-size: 20px;
+    display:inline-block;
+    margin-right:60.5px;
+    margin-left: 5px;
+    margin-bottom:0px;
+}
+nav li:last-child {
+    margin-right: 0px;
+}
+nav ul {
+    padding-left: 0;    
+}
+h1{
+    font-size: 20px;
+    text-align: justify;
+}
+.header-image {
+    width: 100%;
+    height: auto;
+}
+.site-header img {
+    margin-top:36px;
+    width:100%;
+    height:auto;
+}
+/*picture
+img {
+    width: auto;
+    color:aliceblue;
+    padding-top: 00px;
+    padding-bottom:20px ;
+    padding-left: 20px;
+    padding: 0px 00px 00px 0px;
+    image-orientation: flip;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1px;
+    font-weight:bold; 
+    text-align:center;
+}*/
+
+.container {
+   width: 100%;
+    max-width:fit-content;
+   /*center the layout*/
+    margin: 16px auto;
+}
+.row1{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.header-image {
+    width: 0%;
+    height: 0px;
+}
+/*center text*/
+h1 {
+    background-color:#EF92D5;
+    width: fit-content;
+    height: 125px;
+    padding-top: 00px;
+    padding-bottom:0px ;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: #671419;
+    font-weight: bold;
+    font-size: 15px;
+}
+footer{
+   
+    margin-top:20px;
+    background-color:#FD0DBA;
+    margin-left: 7px;
+   
+ 
+}
+
+p{
+
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom:20px ;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: bold;
+
+}
+
+
+h3 {
+    
+    font-size: 25px;
+}
+
+
+a:hover {
+    color:#68094d;
+    text-decoration: none;
+}
+
+@media  (max-width: 450px) {
+
+    body {
+        width: fit-content;
+        margin: 0 16px 16px 16px;
+            
+    }
+    
+    .wrapper {
+        display : flex ;
+        justify-content : center ;
+        align-items:center ;
+        height : auto;
+        width: 100%;
+    }
+    
+    img {
+        display: block;
+        margin: 0 0 0px 0;
+    
+    }
+    .column {
+        float: left;
+        width: 80%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+
+}

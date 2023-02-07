@@ -36,7 +36,6 @@ echo "
 </tr>
 </table>
 ";
-
 ?>
 <h3>4 Screenshot of the development environment</h3>
 <img src="image1.jpg" alt="Docker img">

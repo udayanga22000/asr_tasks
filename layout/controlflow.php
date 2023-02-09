@@ -48,17 +48,22 @@ elseif ($score < 50)
     }
 ?>
 <h4>4. Write a program to get inputs (age and name) from the user and based on their age, decide if he/she is eligible for voting</h4>
+<form  method = "post" >
+Name : <input type="text" name = "name" required class="form-control" placeholder="Enter Your name">
+Age : <input type="text" name = "age" required class="form-control" placeholder="Enter Your Age">
+<input type ="submit" value ="submit"> 
+</form>
 <?php
-function check_vote() {
-    $name = "Name";
-    $age = 00;
-    if ($age >= 18) {
-        echo $name . ", You Are Eligible For Vote";
-    } else {
-        echo $name . ", You are not eligible for vote. ";
-    }
+$name = $_POST['name'];
+$age = $_POST['age'];
+if ($_POST['age'] < 18){
+    echo ("$name, You are $age year old and not eligible for voting.");
 }
-check_vote(); 
+else {
+    echo ("$name, You are $age year old and eligible for voting.");
+    
+}
+
 ?>
 <h4>5. you used $_SERVER['HTTP_USER_AGENT']; to get the browser name. </h4>
 <?php

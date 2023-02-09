@@ -67,35 +67,23 @@ else {
 ?>
 <h4>5. you used $_SERVER['HTTP_USER_AGENT']; to get the browser name. </h4>
 <?php
-
- function getBrowser()
- {
-   $user_agent = $_SERVER['HTTP_USER_AGENT'];
-   $browser = "N/A";
-
-   $browsers = [
-     '/msie/i' => 'Internet explorer',
-     '/firefox/i' => 'Firefox',
-     '/safari/i' => 'Safari',
-     '/chrome/i' => 'Chrome',
-     '/edge/i' => 'Edge',
-     '/opera/i' => 'Opera',
-     '/mobile/i' => 'Mobile browser',
-   ];
-
-
-   foreach ($browsers as $regex => $value) 
-{
-     if (preg_match($regex, $user_agent)) 
-{
-       $browser = $value;
-     }
-   }
-   return $browser;
-
- }
-
- echo "You are using: " . getBrowser();
-
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+echo $user_agent ;
+echo "<br>";
+if (strpos($user_agent,'Chrome') == true){
+    echo ("You are using Chrome browser.");
+}
+elseif (strpos($user_agent,'Edg') == true){
+    echo ("You are using Edge browser.");
+}
+elseif (strpos($user_agent,'Safari') == true){
+    echo ("You are using Safari browser.");
+}
+elseif (strpos($user_agent,'Firefox') == true){
+    echo ("You are using Firefox browser.");
+}
+else{
+    echo ("Your browser cannot be identified.");
+}
 ?>
 <?php include "footer.php" ?>

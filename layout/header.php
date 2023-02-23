@@ -12,7 +12,7 @@
     color: white;
 }
     </style>
-<script src="../layout/js/site.js"></script>
+<script src="../layout/site.js"></script>
 
 </head>
 <body>
